@@ -50,7 +50,7 @@ export default async function page({params}){
             </div>
             <div className='categoriesContainer'>
             {data.map(item => (
-                 <Link href={`/productdetail/${item.id}`}>
+                 <Link key={item.id} href={`/productdetail/${item.id}`}>
             <div className="boxPrd" key={item.id}>
                     <div className="mb-6">
                             <div className="imgContainer">
