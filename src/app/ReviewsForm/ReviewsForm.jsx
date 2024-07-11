@@ -29,7 +29,7 @@ export const ReviewsForm = ({ productId }) => {
       });
 
       if (!response.ok) {
-        throw new Error('Review submission failed');
+        // throw new Error('Review submission failed');
       }
       else{
 
