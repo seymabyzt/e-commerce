@@ -3,8 +3,8 @@ import Image from 'next/image';
 import i18next from '../../i18n';
 import manBanner from '../../../public/manBanner.png';
 import girlBanner from '../../../public/girlBanner.png';
-import manBanner3 from '../../../public/manBanner3.png';
-import manBanner2 from '../../../public/manBanner2.png'
+import manBanner3 from '../../../public/ManBanner3.png';
+import manBanner2 from '../../../public/ManBanner2.png'
 
 
 const Banner = () => {
