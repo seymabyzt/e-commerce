@@ -20,7 +20,7 @@ export const ReviewsForm = ({ productId }) => {
         productId: productId
       }
       
-      const response = await fetch('https://e-commerce-json-server-pied.vercel.app/reviews', {
+      const response = await fetch('http://localhost:8000/reviews', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ export const ReviewsForm = ({ productId }) => {
               </div>
               <div className="modal-footer">
                 <button typeof="button" className="btn btn-secondary" data-bs-dismiss="modal">{i18next.t('close')}</button>
-                <button typeof="submit" className="btn btn-primary">{i18next.t('applyreview')}</button>
+                <button typeof="submit" className="btn">{i18next.t('applyreview')}</button>
               </div>
             </form>
           </div>
