@@ -9,14 +9,15 @@ export default async function AdviceBanner() {
     
     return (
         <div className="container-xxl">
-            <h1 className="text-center title py-5">{i18next.t('youmight')}</h1>
+            <h1 className="text-center adviceTitle py-5">{i18next.t('youmight')}</h1>
             <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
             {data.map(item => (
             <div className="col" key={item.id}>
                    <Link href={`/productdetail/${item.id}`}>
                     <div className="mb-6">
                             <div className="imgContainer">
-                                <a href="#"><img src={item.image} alt="" className="w-100"/></a>
+                              <img src={item.image} className="w-100" alt="" 
+                             />
                         </div>
                         <div>
                             <h2 className="mt-3 fs-6"><a href="#" className="productTitle">{item.name}</a></h2>
@@ -33,12 +34,11 @@ export default async function AdviceBanner() {
                                     <i className="bi bi-star-fill"></i>
                                     <i className="bi bi-star-half"></i>
                                 </small>
-                                <span className="text-muted small">{item.rating}</span>
+                                <span className="ratingAdvice small">{item.rating}</span>
                             </div>
                         </div>
                     </div></Link>
                 </div>))}
-            
             </div>
             <div className="d-flex justify-content-center">
             <ViewBtn></ViewBtn>

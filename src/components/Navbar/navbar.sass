@@ -1,7 +1,7 @@
 @import '../../app/globals'
 
 .navbar
-  background-color: #ffff
+  background-color: $light
   color: $danger
   height: 90px
   font-family: "satoshi"
@@ -21,13 +21,26 @@
   .navbar-toggler-icon
     background-color: $light
     html.dark & 
-      background-color: $danger
-      color: #ffff
+      background-color: $light
+      color: $light
 
   .nav-link
     color: $primary
     html.dark & 
-      color: #ffff
+      color: $light
+    &:active
+      html.dark & 
+      color: $light
+
+.cartBtn
+  color: $danger
+  html.dark & 
+    color: $light
+
+.profileBtn
+  color: $danger
+  html.dark & 
+    color: $light
 
 .bottomLine
   position: relative
@@ -54,6 +67,7 @@
 
 @media (max-width: 480px)
   .bottomLine
-    display: none
+    &:after 
+      display: none
 
   

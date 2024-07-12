@@ -8,7 +8,7 @@
 // );
 
 // async function getRating() {
-//   const res = await fetch('https://e-commerce-eta-gules.vercel.app:8000/products/rating');
+//   const res = await fetch('http://localhost:8000/products/rating');
   
 //   if (!res.ok) {
 //     throw new Error('Failed to fetch data');

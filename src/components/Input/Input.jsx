@@ -14,17 +14,16 @@ const Input = () => {
   };
 
   return (
-    <div>
       <div className='d-flex searchForm'>
         <i className="bi bi-search"></i>
         <input
-          type="text"
+        className='searchInput'
+          typeof="text"
           onKeyUp={handleKeyPress}
           placeholder={i18next.t('inputSearch')}
           aria-label="Search"
         />
       </div>
-    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 //import { Inter } from "next/font/google";
-import "./globals.sass";
+import './globals.sass';
 import { ThemeProvider } from "@/context/ThemeContext";
 import i18next from '../i18n';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className="general">
+      <body>
       <ThemeProvider>
         <ImportBsJS />
       <TopBar></TopBar>
