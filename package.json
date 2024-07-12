@@ -5,9 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "concurrently \"npm run serve-json\" \"next start\"",
-    "lint": "next lint",
-    "serve-json": "json-server --watch db.json --port 8000"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
@@ -15,7 +14,6 @@
     "@smastrom/react-rating": "^1.5.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
-    "concurrently": "^8.2.2",
     "i18next": "^23.11.5",
     "i18next-http-backend": "^2.5.2",
     "json-server": "^1.0.0-beta.1",
