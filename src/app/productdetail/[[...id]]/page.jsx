@@ -28,7 +28,7 @@ const page = async ({ params }) => {
                     <img src={data.image} alt="" className="w-100" />
                     </div>
                   </div>
-                  <div className="col-lg-8 biggerImg">
+                  <div className="col-lg-8 col-10 biggerImg">
                    <img src={data.image} alt="" className="w-100" />
                   </div>
                 </div>
@@ -60,26 +60,11 @@ const page = async ({ params }) => {
                       <span className="badge rounded-pill">-45%</span>
                     </div>
                     <p className="fs-sm mb-0">{data.description}</p>
-
-                    <ul className="list-inline mb-0 colours-wrapper">
-                      <li className="list-inline-item">
-                        <label className="btn-colour" htmlFor="colour_sidebar_Blue" data-allow-multiple=""> </label>
-                        <input className="input-invisible" typeof="checkbox" name="colour" id="colour_sidebar_Blue" />
-                      </li>
-                      <li className="list-inline-item">
-                        <label className="btn-colour" htmlFor="colour_sidebar_White" data-allow-multiple=""> </label>
-                        <input className="input-invisible" typeof="checkbox" name="colour" id="colour_sidebar_White" />
-                      </li>
-                      <li className="list-inline-item">
-                        <label className="btn-colour" htmlFor="colour_sidebar_Violet" data-allow-multiple=""> </label>
-                        <input className="input-invisible" typeof="checkbox" name="colour" id="colour_sidebar_Violet" />
-                      </li>
-                      <li className="list-inline-item">
-                        <label className="btn-colour" htmlFor="colour_sidebar_Red" data-allow-multiple="">
-                        </label>
-                        <input className="input-invisible" typeof="checkbox" name="colour"  id="colour_sidebar_Red" />
-                      </li>
+               
+                    <ul >
+                      <li>colors</li>
                     </ul>
+           
                     <div className="mb-3">
                       <div className="d-flex align-items-center justify-content-between mb-1">
                         <label className="form-label fw-semibold mb-0">{i18next.t('size')}</label>

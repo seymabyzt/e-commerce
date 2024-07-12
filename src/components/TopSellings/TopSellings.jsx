@@ -5,18 +5,21 @@ import "./topSellings.sass";
 import Link from "next/link";
 
 
-export default async function page() {
+export default async function page({count}) {
     const data = await getData()
-    const topSelling = data.filter(item => item.topSelling === true).slice(0, 4)
-
+    const topSelling = data.filter(item => item.topSelling === true).slice(0, count)
+    let displayViewAlll = 'block';
+    if(count> 4){
+displayViewAlll = 'none'
+    }
 
     return (
         <div className="container-xxl">
             <h1 className="text-center topSellTitle py-5">{i18next.t('topSelling')}</h1>
             <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
                 {topSelling?.map(item => (
-                    <div className="col" key={item.id}>
-                        <Link href={`/productdetail/${item.id}`}>
+                    <div className="col" >
+                        <Link key={item.id} href={`/productdetail/${item.id}`}>
                             <div className="mb-6">
                                 <div className="imgContainer">
                                     <img src={item.image} alt="" className="w-100" />
@@ -44,7 +47,11 @@ export default async function page() {
                     </div>))}
                 </div>
             <div className="d-flex justify-content-center">
-                <ViewBtn></ViewBtn>
+            <div style={{display: displayViewAlll}}> 
+            <Link href={'/topSellings/'}>
+                    <ViewBtn ></ViewBtn>
+                    </Link>
+                    </div>
             </div>
         </div>
     )

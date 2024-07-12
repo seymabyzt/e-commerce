@@ -4,17 +4,20 @@ import ViewBtn from "../ViewBtn/ViewBtn";
 import "./topArrivals.sass"
 import { getData } from '@/api';
 
-export default async function page() {
+export default async function page({count}) {
     const data = await getData('http://localhost:3000/products')
-    const newarrivals =  data.filter(item => item.newArrivals === true).slice(0, 4)
-
+    const newarrivals =  data.filter(item => item.newArrivals === true).slice(0, count)
+    let displayViewAlll = 'block';
+    if(count> 4){
+displayViewAlll = 'none'
+    }
     return (
         <div className="container-xxl">
             <h1 className="text-center newArvTitle py-5">{i18next.t('newArrivals')}</h1>
             <div className="row row-cols-xl-4 row-cols-lg-3 g-4">
             {newarrivals.map(item => (
-            <div className="col" key={item.id}>
-            <Link href={`/productdetail/${item.id}`}>
+            <div className="col" >
+            <Link key={item.id} href={`/productdetail/${item.id}`}>
                     <div className="mb-6">
                             <div className="imgContainer">
                                <img src={item.image} className="w-100" alt=""/>
@@ -42,7 +45,12 @@ export default async function page() {
                 </div>))}
             </div>
             <div className="d-flex justify-content-center">
-            <ViewBtn ></ViewBtn>
+                <div style={{display: displayViewAlll}}> 
+                    <Link href={'/newarrivals/'}>
+                    <ViewBtn ></ViewBtn>
+                    </Link>
+                    </div>
+          
             </div>
         </div>
     )
