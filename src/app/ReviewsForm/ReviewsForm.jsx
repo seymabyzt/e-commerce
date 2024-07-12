@@ -20,7 +20,7 @@ export const ReviewsForm = ({ productId }) => {
         productId: productId
       }
       
-      const response = await fetch('http://localhost:8000/reviews', {
+      const response = await fetch('https://e-commerce-json-server-pied.vercel.app/reviews', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
