@@ -8,9 +8,9 @@ import calvin from "../../public/calvin.svg";
 import prada from "../../public/prada.svg";
 import gucci from "../../public/gucci.svg";
 import littlestar from "../../public/littlestar.svg";
-import NewArrivals from "@/components/NewArrivals/NewArrivals.jsx"
-import TopSellings from '@/components/TopSellings/TopSellings';
-import Banner from '@/components/Banner/Banner';
+import NewArrivals from "../components/NewArrivals/NewArrivals";
+import TopSellings from '../components/TopSellings/TopSellings';
+import Banner from '../components/Banner/Banner';
 
 
 export default function Home() {

@@ -1,5 +1,5 @@
 import i18next from "../../i18n";
-import { getReviews } from "@/api";
+import { getReviews } from "../../../src/api";
 import './Reviews.sass'
 const Reviews = async ({ productId }) => {
   let reviews = await getReviews(productId);

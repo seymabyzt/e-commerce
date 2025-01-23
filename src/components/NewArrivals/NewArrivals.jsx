@@ -2,7 +2,7 @@ import Link from "next/link";
 import i18next from "../../i18n";
 import ViewBtn from "../ViewBtn/ViewBtn";
 import "./topArrivals.sass"
-import { getData } from '@/api';
+import { getData } from '../../api';
 
 export default async function page({count}) {
     const data = await getData('http://localhost:3000/products')

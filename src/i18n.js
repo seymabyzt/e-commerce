@@ -37,6 +37,7 @@ i18next.init({
                 "subscribePlaceholder": "Enter your email address",
                 "subscribeButton": "Subscribe to Newsletter",
                 "brand": "SHOP.CO",
+                "colors": "Colors",
                  //Footer
                 "description": "We have clothes that suits your style and which you’re proud to wear. From women to men.",
                 "companyLinks": "COMPANY",
@@ -133,6 +134,7 @@ i18next.init({
                 "brand": "DÜKKAN.CO",
                 "description": "Tarzınıza uygun ve giymekten gurur duyacağınız kıyafetlerimiz var. Kadınlardan erkeklere.",
                 "highqualty": "Yüksek Kaliteli Ürünler",
+                "colors": "Renkler",
                 //Footer
                 "companyLinks": "ŞİRKET",
                 "about": "Hakkında",

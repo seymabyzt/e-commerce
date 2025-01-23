@@ -1,5 +1,5 @@
 
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 import '../app/globals.sass'
 const ThemeToggleBtn = () => {
   const { isDarkMode, toggleTheme } = useTheme();

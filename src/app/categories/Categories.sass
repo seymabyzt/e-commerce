@@ -5,18 +5,6 @@
   html.dark &
     background-color: $danger
 
-
-.imgContainer
-    height: 300px
-    display: flex
-    align-items: center
-    justify-content: center
-    overflow: hidden
-    border: none !important
-    border-radius: 20px
-    img
-        object-fit: cover
-
 .title
     font-family: "Integral CF Bold"
     font-size: 48px
@@ -59,7 +47,6 @@
     html.dark &
         background-color: $light 
 
-
 .discountPrice
     font-family: Satoshi
     font-size: 20px
@@ -80,18 +67,4 @@
     html.dark &
         color: $light
 
-.categoriesContainer
-    display: grid
-    grid-template-columns: auto auto auto
-    gap: 10px
 
-.boxPrd
-    margin-bottom: 30px
-
-.productList
-    border-bottom: 1px solid $secondary
-
-@media (max-width: 480px) 
-    .categoriesContainer
-        display: flex
-        flex-direction: column

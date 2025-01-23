@@ -1,4 +1,4 @@
-import { getData } from "@/api";
+import { getData } from "../../api";
 import i18next from "../../i18n";
 import "./AdviceBanner.sass"
 import Link from "next/link";
